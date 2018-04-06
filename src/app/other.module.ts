@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 class PublicComponent {
 }
+
+@Component({
+    selector: 'private-component',
+    template: `<p>private component</p>`
+})
+class PrivateComponent {
+}
 @NgModule({
-    declarations: [PublicComponent],
+    declarations: [PublicComponent, PrivateComponent],
     exports: [PublicComponent]  // 公开组件
 })
 export class OtherModule { }
