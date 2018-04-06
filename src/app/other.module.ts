@@ -9,6 +9,6 @@ class PublicComponent {
 }
 @NgModule({
     declarations: [PublicComponent],
-    exports: [PublicComponent]  // 共有组件
+    exports: [PublicComponent]  // 公开组件
 })
 export class OtherModule { }
